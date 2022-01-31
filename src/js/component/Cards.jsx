@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+// Cards function
+
 export const Cards = (props) => {
 	return (
 		<div class="container">

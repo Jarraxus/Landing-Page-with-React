@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+// Footer function
+
 export const Footer = (props) => {
 	return (
 		<div className="bg-dark mt-5 mb-0">

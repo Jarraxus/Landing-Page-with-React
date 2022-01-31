@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+// Navbar function
+
 export const Navbar = (props) => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -20,29 +22,24 @@ export const Navbar = (props) => {
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">
-							{props.first} <span class="sr-only">(current)</span>
+						<a class="nav-link" href={props.firstUrl}>
+							{props.firstSlot}{" "}
+							<span class="sr-only">(current)</span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a
-							class="nav-link"
-							href="https://www.youtube.com/watch?v=VPT3ysdU5JY">
-							{props.second}
+						<a class="nav-link" href={props.secondUrl}>
+							{props.secondSlot}
 						</a>
 					</li>
 					<li class="nav-item">
-						<a
-							class="nav-link"
-							href="https://mkorostoff.github.io/1-pixel-wealth/">
-							{props.third}
+						<a class="nav-link" href={props.thirdUrl}>
+							{props.thirdSlot}
 						</a>
 					</li>
 					<li class="nav-item">
-						<a
-							class="nav-link"
-							href="https://static.wikia.nocookie.net/zelda/images/c/ca/Link_Artwork_2_%28Twilight_Princess%29.png">
-							{props.fourth}
+						<a class="nav-link" href={props.fourthUrl}>
+							{props.fourthSlot}
 						</a>
 					</li>
 				</ul>
@@ -51,11 +48,15 @@ export const Navbar = (props) => {
 	);
 };
 
-// // propTypes for Navbar
+// propTypes for Navbar
 
 Navbar.propTypes = {
-	first: PropTypes.string,
-	second: PropTypes.string,
-	third: PropTypes.string,
-	fourth: PropTypes.string,
+	firstSlot: PropTypes.string,
+	firstUrl: PropTypes.string,
+	secondSlot: PropTypes.string,
+	secondUrl: PropTypes.string,
+	thirdSlot: PropTypes.string,
+	thirdUrl: PropTypes.string,
+	fourthSlot: PropTypes.string,
+	fourthUrl: PropTypes.string,
 };

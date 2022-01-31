@@ -15,10 +15,14 @@ import { Footer } from "./component/Footer.jsx";
 ReactDOM.render(
 	<div>
 		<Navbar
-			first="Home"
-			second="Study Music"
-			third="Why Money Laws have to Change"
-			fourth="Adult Link"
+			firstSlot="Home"
+			firstUrl="#"
+			secondSlot="Study Music"
+			secondUrl="https://www.youtube.com/watch?v=VPT3ysdU5JY"
+			thirdSlot="Why Money Laws have to Change"
+			thirdUrl="https://mkorostoff.github.io/1-pixel-wealth/"
+			fourthSlot="Adult Link"
+			fourthUrl="https://static.wikia.nocookie.net/zelda/images/c/ca/Link_Artwork_2_%28Twilight_Princess%29.png"
 		/>
 		<Jumbotron
 			title="It's Time to Code!"
