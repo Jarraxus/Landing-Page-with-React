@@ -30,28 +30,36 @@ ReactDOM.render(
 			buttonUrl="https://4geeksacademy.com/"
 			buttonText="Go to 4Geeks Academy!"
 		/>
-		<Cards
-			firstImage="https://picsum.photos/id/0/200/300"
-			firstTitle="Step 1"
-			firstDescription="Prepare you workspace with everything you'll need for your project. Headphones, refreshments, references, etc."
-			firstUrl="https://nymag.com/strategist/article/best-work-from-home-essentials.html"
-			firstLabel="Do you have these?"
-			secondImage="https://picsum.photos/id/1/200/300"
-			secondTitle="Step 2"
-			secondDescription="Study hard and code harder! It's time to put your skills and brainpower to the test to complete you projects!"
-			secondUrl="https://learn.breatheco.de/login"
-			secondLabel="Get crackin'!"
-			thirdImage="https://picsum.photos/id/2/200/300"
-			thirdTitle="Step 3"
-			thirdDescription="Stare blankly into the infinite void that is the workload, spiraling into a existential crisis. But fear not, you can do it!"
-			thirdUrl="https://www.youtube.com/watch?v=qztuEucrNBc"
-			thirdLabel="You can do it!"
-			fourthImage="https://picsum.photos/id/3/200/300"
-			fourthTitle="Step 4"
-			fourthDescription="Get distracted by Reddit and lose track of time. That way when you remember your task, you can hyperfocus and finish quickly due to panic."
-			fourthUrl="https://reddit.com"
-			fourthLabel="Go to Reddit now!"
-		/>
+		<div className="card-deck row">
+			<Cards
+				Image="https://picsum.photos/id/0/200/300"
+				Title="Step 1"
+				Description="Prepare you workspace with everything you'll need for your project. Headphones, refreshments, references, etc."
+				Url="https://nymag.com/strategist/article/best-work-from-home-essentials.html"
+				Label="Do you have these?"
+			/>
+			<Cards
+				Image="https://picsum.photos/id/1/200/300"
+				Title="Step 2"
+				Description="Study hard and code harder! It's time to put your skills and brainpower to the test to complete you projects!"
+				Url="https://learn.breatheco.de/login"
+				Label="Get crackin'!"
+			/>
+			<Cards
+				Image="https://picsum.photos/id/2/200/300"
+				Title="Step 3"
+				Description="Stare blankly into the infinite void that is the workload, spiraling into a existential crisis. But fear not, you can do it!"
+				Url="https://www.youtube.com/watch?v=qztuEucrNBc"
+				Label="You can do it!"
+			/>
+			<Cards
+				Image="https://picsum.photos/id/3/200/300"
+				Title="Step 4"
+				Description="Get distracted by Reddit and lose track of time. That way when you remember your task, you can hyperfocus and finish quickly due to panic."
+				Url="https://reddit.com"
+				Label="Go to Reddit now!"
+			/>
+		</div>
 		<Footer owner="Jarraxus" date="2022" />
 	</div>,
 	document.querySelector("#app")
